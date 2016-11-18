@@ -12,6 +12,6 @@ public class StoreHandler {
     }
 
     public OperationResult process(String add_message) {
-        return new InformationOperationResult();
+        return new InformationOperationResult("OK");
     }
 }

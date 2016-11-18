@@ -51,4 +51,10 @@ public class OperationsTests {
         OperationResult result = addOperation.execute(operationParameters);
         assertEquals(ValueOperationResult.class, result.getClass());
     }
+
+
+    @Test
+    public void operation(){
+
+    }
 }
