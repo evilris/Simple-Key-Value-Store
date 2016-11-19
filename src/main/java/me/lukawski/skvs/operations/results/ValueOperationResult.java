@@ -11,8 +11,14 @@ public class ValueOperationResult implements OperationResult{
 
     private List<String> values;
 
+
     @Override
     public String getOperationMesage() {
+        return null;
+    }
+
+    @Override
+    public String getValue() {
         return null;
     }
 

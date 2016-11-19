@@ -10,6 +10,7 @@ import java.util.LinkedHashMap;
  * Created by EvilRIS on 18.11.2016.
  */
 public class Operations {
+    public static final String NO_OPERATION_NAME = "NO";
     private static HashMap<String,Operation> operationsCache;
 
     static {

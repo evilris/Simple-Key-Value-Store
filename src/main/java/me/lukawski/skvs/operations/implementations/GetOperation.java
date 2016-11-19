@@ -10,6 +10,6 @@ import me.lukawski.skvs.operations.results.InformationOperationResult;
 public class GetOperation implements Operation{
     @Override
     public OperationResult execute(String[] operationParameters) {
-        return new InformationOperationResult();
+        return new InformationOperationResult("OK","VALUE");
     }
 }

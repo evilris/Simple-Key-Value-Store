@@ -11,9 +11,20 @@ public class OperationHandleTests {
     public static String add_message = "ADD KEY VALUE";
     public static String get_message = "GET KEY";
     @Test
-    public void addToStoreAndRetriveSameItem(){
+    public void addToStoreReturnOK(){
         StoreHandler store = StoreHandler.getLocalInstance();
         OperationResult result = store.process(add_message);
         Assert.assertEquals(result.getOperationMesage(), OK_MESSAGE);
     }
+
+    @Test
+    public void addThenGetSameItemFromStore(){
+        StoreHandler store = StoreHandler.getLocalInstance();
+        OperationResult result = store.process(add_message);
+        OperationResult getResult = store.process(get_message);
+        Assert.assertEquals("VALUE",getResult.getValue());
+
+    }
+
 }
+
