@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * Created by EvilRIS on 18.11.2016.
  */
-public class OperationHandleTests {
+public class OperationHandleTest {
 
     public static final String OK_MESSAGE = "OK";
     public static String add_message = "ADD KEY VALUE";

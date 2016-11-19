@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * Created by EvilRIS on 19.11.2016.
  */
-public class StoreTests {
+public class StoreTest {
 
     @Test
     public void putAndGetFromStore(){

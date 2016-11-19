@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 /**
  * Created by EvilRIS on 18.11.2016.
  */
-public class OperationsTests {
+public class OperationsTest {
 
     public static final String GET_OPERATION = "GET";
     public static final String ADD_OPERATION = "ADD";
