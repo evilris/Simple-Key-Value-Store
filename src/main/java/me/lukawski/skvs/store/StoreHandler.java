@@ -10,9 +10,16 @@ import me.lukawski.skvs.operations.results.InformationOperationResult;
  * Created by EvilRIS on 18.11.2016.
  */
 public class StoreHandler {
+    private KeyValueStore<String,Object> store;
+
+    public StoreHandler(){
+        this.store = new KeyValueStore<String,Object>();
+    }
     public static StoreHandler getLocalInstance() {
         return new StoreHandler();
     }
+
+
 
     public OperationResult process(String add_message) {
         Operation operation = getOperationFromMessage(add_message);
